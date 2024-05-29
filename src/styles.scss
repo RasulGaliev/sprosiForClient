@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background: #F4F4F4;
+  --graphite: #3B3B3B;
+  --red: #D13B3B;
+  --gray: #9A9A9A;
+  --white: #fff;
+  --Commissioner: "Commissioner", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+a, p, span {
+   color: var(--graphite);
+   font-family: var(--Commissioner);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--graphite);
+  font-family: var(--Commissioner);
+}
+
+div, a {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1444px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.menu {
+  justify-content: space-between;
+  display: flex;
+
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu__item {
+      list-style-type: none;
+
+      .menu__link {
+        font-size: 16px;
+      }
+    }
+  }
+}

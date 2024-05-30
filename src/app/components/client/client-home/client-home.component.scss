@@ -1,0 +1,513 @@
+.main {
+    .info {
+        padding-bottom: 70px;
+
+        .main__container {
+            justify-content: space-between;
+
+            .info__block {
+                border-radius: 20px;
+                box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+            }
+
+            .main-block {
+                width: 829px;
+                height: 340px;
+                padding: 32px;
+                border-radius: 20px;
+                position: relative;
+                box-shadow: none;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; 
+
+                .main-block__img {
+                    position: absolute;
+                    z-index: 0;
+                    top: -5px;
+                    left: -8px;
+                    // scale: 1.02;
+
+                }
+
+                .main-block__title {
+                    width: 500px;
+                    position: relative;
+                }
+
+                .main-block__text {
+                    width: 349px;
+                    position: relative;
+                }
+
+                .main-block__button {
+                    box-sizing: border-box;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 272px;
+                    height: 60px;
+                    margin-top: 34px;
+                    cursor: pointer;
+                    outline: none;
+                    border: 0;
+                    vertical-align: middle;
+                    text-decoration: none;
+                    background-color: var(--white);
+                    box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+                    border-radius: 50px;
+                    overflow: hidden;
+              
+                    @keyframes reduceScale {
+                      from {
+                        scale: 1;
+                      }
+              
+                      to {
+                        scale: 22;
+                      }
+                    }
+              
+                    @keyframes reduceScaleReverse {
+                      from {
+                        scale: 20;
+                      }
+              
+                      to {
+                        scale: 1;
+                      }
+                    }
+              
+                    .button__symbols {
+                        width: 100%;
+                        position: absolute;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 14px 27px;
+
+                        .button__text {
+                            // @include transition(all, 1s, cubic-bezier(0.65, 0, .076, 1));
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 1;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            padding: 0.75rem 0;
+                            // margin: 0 1.85rem 0 0;
+                            text-align: center;
+                            font-weight: 600;
+                            font-size: 20px;
+                            font-family: "Commissioner", sans-serif;
+                        }
+              
+                        .button__pointer {
+                            position: relative;
+                            z-index: 1;
+                            right: 1px;
+                            color: white;
+                        }
+                    }
+              
+                    .button__circle {
+                        // @include transition(all, 1s, cubic-bezier(0.65, 0, .076, 1));
+                        position: relative;
+                        right: 27px;
+                        display: block;
+                        margin: 0;
+                        width: 32px;
+                        height: 32px;
+                        background: var(--red);
+                        border-radius: 50px;
+                        // animation: reduceScaleReverse 0.8s ease-in-out forwards;
+                    }
+                }
+              
+                .button-animated:hover:not(:disabled) {
+                    .circle {
+                      // width: 100%;
+                      // height: 100%;
+                      animation: reduceScale 1s ease-in-out forwards;
+                    }
+              
+                    .promocode-button-text {
+                      color: white;
+                    }
+                  }
+              
+            }
+
+            .mini-blocks {
+                justify-content: space-between;
+                margin-top: 32px;
+
+                .info__mini-block {
+                    width: 397px;
+                    height: 413px;
+                    background-color: var(--white);
+                    
+                }
+
+                .interest-block {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between; 
+
+                    .interest-block__title {
+                        margin: 32px 0 0 32px;
+                        font-size: 24px;
+                        position: relative;
+                    }
+
+                    .interest-block__text {
+                        margin: 0 0 32px 32px;
+                    }
+
+                    .interest-block__img {
+                        position: relative;
+                        left: 75px;
+                        border-radius: 20px;
+                        width: 250px;
+                    }
+
+                }
+    
+                .referral-block {
+                    padding-bottom: 32px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between; 
+
+                    .referral-block__img {
+                        position: relative;
+                        top: 20px;
+                    }
+
+                    .referral-block__text {
+                        width: 315px;
+                        margin-left: 32px;
+                    }
+
+                    .referral-block__buttons {
+                        position: absolute;
+                        z-index: 1;
+                        display: flex;
+                        margin: 32px 0 0 32px;
+
+                        .referral-block__button {
+                            border: 1px solid var(--gray);
+                            border-radius: 31px;
+                            padding: 8px 16px;
+                            height: 36px;
+
+                            .referral-block__button-text {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .crowdinvesting-button {
+                            width: 127px;
+                        }
+
+                        .passive-income-button {
+                            width: 99px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                
+            }
+
+            .img-block {
+                border: 0.20px solid rgba(59, 59, 59, 0.2);
+                width: 582px;
+                height: 785px;
+                position: relative;
+
+                .img-block__img {
+                    position: absolute;
+                    top: -9px;
+                    left: -9px;
+                }
+                
+            }
+        }
+    }
+
+    .advantages {
+        padding: 70px 0;
+
+        .main__container {
+            background-color: var(--white);
+            border-radius: 20px;
+            height: 738px;
+            padding: 32px;
+            justify-content: space-between;
+            box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+
+            .advantages__main {
+                position: relative;
+
+                .advantages__main-title {
+                    width: 532px;
+                }
+
+                .advantages__pointer {
+                    display: flex;
+                    position: relative;
+                    left: 85px;
+                    top: 59px;
+
+                    .advantages__pointer-img {
+                        position: relative;
+                        left: 225px;
+                        top: -30px;
+                    }
+
+                    .advantages__pointer-button {
+                        background-color: var(--pink);
+                        border-radius: 38px;
+                        padding: 12px 20px;
+                        width: 196px;
+                        height: 48px;
+
+                        .advantages__button-text {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .advantages__main-img {
+                    position: absolute;
+                    top: 271px;
+                    left: -32px;
+                    border-radius: 20px;
+                    
+                }
+            }
+
+
+            .advantages__cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+
+                .advantages__card {
+                    width: 365px;
+                    height: 320px;
+                    box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+                    border-radius: 20px;
+                    position: relative;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between; 
+    
+                    .advantages__card-title {
+                        font-size: 20px;
+                        margin: 32px 0 0 32px;
+                    }
+    
+                    .advantages__card-img {
+                        position: absolute;
+                    }
+
+                    .advantages__card-text {
+                        font-size: 16px;
+                        margin: 0 32px 32px;
+                    }
+                }
+
+                .advantages__card--type1 {
+                    .advantages__card-img {
+                        top: 114px;
+                    }
+
+                    .advantages__card-text {
+                        width: 188px;
+                    }
+                }
+
+                .advantages__card--type2 {
+                    .advantages__card-img {
+                        top: 109px
+                    }
+
+                    .advantages__card-text {
+                        width: 242px;
+                    }
+                }
+
+                .advantages__card--type3 {
+                    .advantages__card-img {
+                        top: 95px
+                    }
+
+                    .advantages__card-text {
+                        width: 272px;
+                    }
+                }
+
+                .advantages__card--type4 {
+                    .advantages__card-img {
+                        top: 93px
+                    }
+
+                    .advantages__card-text {
+                        width: 265px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .calculator {
+        .main__container {
+            height: 788px;
+            padding: 70px 0;
+            display: flex;
+            scale: 1.01;
+            position: relative;
+            left: 0;
+
+            .calculator__background {
+                position: absolute;
+            }
+
+            .calculator__title {
+                position: absolute;
+                margin: 40px 0 0 32px;
+            }
+
+            .calculator__tabs {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 16px;
+                margin-left: 10px;
+                position: absolute;
+                top: 225px;
+                left: 92px;
+
+                button.active {
+                    color: var(--red);
+                }
+
+                .calculator__tabs-item {
+                    background: none;
+                    color: var(--gray);
+                    border: none;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+
+                .calculator__tabs-slash {
+                    color: var(--gray);
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+            }
+
+            .calculator__item {
+                .calculator__calculate {
+
+                }
+
+                .calculator__info {
+
+                }
+            }
+
+        }
+    }
+
+    .conntacs {
+        .main__container {
+            justify-content: space-between;
+
+            .conntacs__info {
+                background-color: var(--white);
+                box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+                border-radius: 20px;
+                width: 829px;
+                height: 384px;
+                padding: 32px;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; 
+
+                .conntacs__info-text {
+                    font-size: 18px;
+                    margin-top: 32px;
+                }
+
+                .conntacs__info-buttons {
+                    .conntacs__buttons-items {
+                        margin-right: 24px;
+                        align-items: center;
+                        display: flex;
+
+                        .contacts__items-text {
+                            margin-left: 12px;
+                        }
+                    }
+                }
+            }
+
+            .conntacs__request {
+                background-color: var(--white);
+                box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+                border-radius: 20px;
+                width: 583px;
+                height: 384px;
+                padding: 32px;
+                text-align: center;
+
+                .conntacs__request-title {
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 32px;
+                }
+
+                .conntacs__request-form {
+                    .conntacs__form-input {
+                        border-radius: 50px;
+                        width: 452px;
+                        height: 60px;
+                        margin-bottom: 32px;
+                        background: rgba(59, 59, 59, 0.1);
+                        color: var(--gray);
+                        border: none;
+                        padding: 20px 28px;
+                        font-size: 20px;
+                    }
+
+                    .conntacs__request-button {
+                        border-radius: 50px;
+                        padding: 12px 27px;
+                        width: 452px;
+                        height: 60px;
+                        box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+                        background: var(--red);
+                        color: var(--white);
+                        font-size: 20px;
+                        font-weight: 500;
+                        border: none;
+                    }
+                }
+
+            }
+        }
+    }
+}

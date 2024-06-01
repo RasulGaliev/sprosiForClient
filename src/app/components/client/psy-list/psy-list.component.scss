@@ -1,0 +1,72 @@
+.main {
+    .main__container {
+        .psy-list {
+            .psy-list__title {
+                padding-bottom: 20px;
+            }
+
+            .psy-list__item {
+                height: 300px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                // padding: 10px 10px;
+
+                .psy__block {
+                    box-shadow: 0 0 8px 0 rgba(180, 180, 180, 0.4);
+                    background-color: var(--white);
+                    height: 100%;
+                    border-radius: 20px; 
+                }
+            
+                .psy__block--photo {
+                    width: 200px;
+                    object-fit: cover;
+                }
+
+                .psy__block--info {
+                    width: 800px;
+                    padding: 20px; 
+
+                    .psy__name {
+                        margin-bottom: 15px;
+                    }
+    
+                    .psy__description {
+                        margin-bottom: 5px;
+                    }
+
+                    .psy__experience {
+                        margin-bottom: 5px;
+                    }
+                }
+
+                .psy__block--reviews {
+                    width: 400px;
+                    padding: 20px; 
+
+                    .psy__reviews-title {
+                        margin-bottom: 10px;
+                    }
+
+                    .psy__review {
+                        margin-bottom: 15px;
+
+                        .psy__review-author {
+
+                        }
+
+                        .psy__review-text {
+
+                        }
+                    }
+
+                    .psy__all-reviews {
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<main class="main">
+    <div class="main__container container">
+        <div class="registration">
+            <h3 class="registration__title mini-block-title">
+                Регистрация профиля
+            </h3>
+            <form [formGroup]="form"  (ngSubmit)="onSubmit()" 
+                    class="registration__form">
+                <input class="registration__form-input" type="text"
+                    formControlName="email" placeholder="Почта">
+                <input class="registration__form-input" type="text"
+                    formControlName="phone" placeholder="Пароль">
+                <input class="registration__form-input" type="text"
+                    formControlName="phone" placeholder="Повторите пароль">
+                <button type="submit" [disabled]="form.invalid" 
+                        class="registration__button">
+                    Отправить
+                </button>   
+                <a href="/client/login" class="registration__login-link">
+                    Уже&nbsp;зарегестрирован
+                </a>
+            </form>
+        </div>
+    </div>
+</main>

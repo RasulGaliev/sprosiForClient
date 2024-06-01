@@ -1,0 +1,24 @@
+<main class="main">
+    <div class="main__container container">
+        <div class="login">
+            <h3 class="login__title mini-block-title">
+                Вход в личный кабинет
+            </h3>
+            <form [formGroup]="form"  (ngSubmit)="onSubmit()" 
+                    class="login__form">
+                <input class="login__form-input" type="text"
+                    formControlName="name" placeholder="Почта">
+                <input class="login__form-input" type="text"
+                    formControlName="phone" placeholder="Пароль">
+            
+                <button type="submit" [disabled]="form.invalid" 
+                        class="login__button">
+                    Войти
+                </button>   
+                <a href="/client/registration" class="login__registration-link">
+                    Зарегестрироваться
+                </a>
+            </form>
+        </div>
+    </div>
+</main>
